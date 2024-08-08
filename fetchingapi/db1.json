@@ -1,0 +1,40 @@
+{
+  "students": [
+    {
+      "name": "AAA",
+      "phone": "123456",
+      "city": "punekar",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "BBB",
+      "phone": 22222,
+      "city": "Nashik"
+    },
+    {
+      "id": "3",
+      "name": "CCC",
+      "phone": 33333,
+      "city": "Mumbai"
+    },
+    {
+      "id": "171d",
+      "name": "Sagar",
+      "phone": "8600719189",
+      "city": "Yeola"
+    },
+    {
+      "id": "10ba",
+      "name": "Sagar",
+      "phone": "8600719189",
+      "city": "Yeola"
+    },
+    {
+      "id": "a364",
+      "name": "",
+      "phone": "",
+      "city": ""
+    }
+  ]
+}

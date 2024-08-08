@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+
+    </ul>
+    <script>
+        let itenms=[
+            {
+                id:1,
+                name:"Keyboard",
+                price:234
+            },
+            {
+                id:1,
+                name:"Mouse",
+                price:5474
+            },
+
+        ]
+        function displayitem()
+        {
+            setTimeout(()=>{
+                itenms.map((i)=>{
+                    document.getElementById("list").innerHTML+= `
+                      <li>
+                      ${i.name}</li>  `
+
+                })
+            
+            },2000)
+        }
+         displayitem()
+
+        // function createitem(newitem)
+        // {
+        //     setTimeout(()=>{
+        //         itenms.push(newitem)
+        //     },1000)
+        // }
+        // createitem({id:3,name:"printer",price:5000})
+
+        //use of callback
+        // function createitem(newitem,cb) {
+        //     setTimeout(()=>{
+        //         itenms.push(newitem)
+        //         cb()
+        //     },2000)
+            
+        // }
+        // createitem({id:3,name:"printer",price:60000},displayitem)
+
+        //use of promise
+        // function createitem(newitem) {
+        //     return new Promise((resolve,reject)=>{
+        //         let error=true
+        //         setTimeout(()=>{
+        //             itenms.push(newitem)
+        //             if (!error) {
+        //                 resolve()
+        //             }
+        //             else
+        //             {
+        //                 reject("Something  went wrong")
+        //             }
+        //         },2000)
+        //     })
+            
+        // }
+        // createitem({id:3,name:"printer",price:70000}).then(()=>{
+        //     displayitem()
+        // }).catch((err)=>{
+        //     console.log(err);
+        // })
+        //async and await
+        async function start()
+        {
+            await createitem({id:3,name:"Printer",price:80000})
+            displayitem()
+        }
+        start()
+    </script>
+    
+</body>
+</html>

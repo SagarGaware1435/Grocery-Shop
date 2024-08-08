@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Photo</th>
+                <th>Address</th>
+                <th>Phono number</th>
+            </tr>
+
+        </thead>
+        <tbody id="stud"></tbody>
+
+    </table>
+    
+    <script>
+        let students=[
+            {
+                rno:1,
+                name:"AAA",
+                photo:"Images/2.jpg",
+                address:"Pune",
+                phone:11111111
+            },
+            {
+                rno:2,
+                name:"BBB",
+                photo:"D:\VS CODING\REACT Sarika_mam\Images\02.jpg",
+                address:"Nashik",
+                phone:2222222
+            },
+            {
+                rno:3,
+                name:"CCC",
+                photo:"https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg",
+                address:"Kolhapur",
+                phone:33333333
+            },
+            {
+                rno:4,
+                name:"DDDD",
+                photo:"Images/1.jpg",
+                address:"Pune",
+                phone:444
+            }
+        ]
+        students.map((item,index)=>{
+            document.getElementById("stud").innerHTML+=`
+           <tr>
+            <td>${item.rno}</td>
+            <td>${item.name}</td>
+            <td><img src=${item.photo}height=50 width=50></td>
+            <td>${item.address}</td>
+            <td>${item.phone}</td>
+`
+        })
+    </script>
+</body>
+</html>

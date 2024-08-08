@@ -1,0 +1,28 @@
+{
+    "student": [
+      {
+        "id": "1",
+        "name": "AAA",
+        "phone": "12345",
+        "city": "pune"
+      },
+      {
+        "id": "2",
+        "name": "BBB",
+        "phone": "12345",
+        "city": "pune"
+      },
+      {
+        "id": "3",
+        "name": "CCC",
+        "phone": "12345",
+        "city": "pune"
+      },
+      {
+        "id": "4",
+        "name": "DDD",
+        "phone": "12345",
+        "city": "pune"
+      }
+    ]
+    }

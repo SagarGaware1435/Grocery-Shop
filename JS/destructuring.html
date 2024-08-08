@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=["AAA","BBB","CCC","DDD","EEE","FFF"]
+        const [x]=arr1
+        document.write(x+"<br>")
+        const [,,,x1]=arr1
+        document.write(x1+"<br>")
+        const [,,...r1]=arr1
+        document.write(r1+"<br>")
+        const [,,...r2]=arr1
+        document.write(r2+"<br>")
+        let emp1={
+            ename:101,
+            ename:"ABC",
+            email:"Abc@gmail.com",
+            phone:11111
+        }
+        const {ename,phone}=emp1
+        document.write(ename+" "+ phone+"<br>")
+    </script>
+    
+</body>
+</html>
